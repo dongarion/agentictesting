@@ -27,13 +27,10 @@ agentic-testing/
 1. Ordner als Projekt öffnen oder `.opencode/` und `AGENTS.md` in ein bestehendes Testprojekt kopieren.
    Für alle Projekte: Inhalt von `.opencode/agents/` und `.opencode/skills/` nach
    `~/.config/opencode/agents/` bzw. `~/.config/opencode/skills/` kopieren.
-2. Qwen3.8-27B als Modell einrichten (lokal über Ollama, LM Studio, vLLM oder SGLang) und als
-   Standardmodell in Opencode wählen. Die Agentendateien setzen bewusst kein `model`, damit alle
-   Agenten das Standardmodell nutzen; ein abweichendes Modell je Agent kannst du im Frontmatter mit
-   `model: provider/modell` ergänzen.
-3. Kontext: Qwen3.8-27B unterstützt nativ 262.144 Token. Lokale Server begrenzen das Fenster oft
-   standardmäßig deutlich niedriger (z. B. `num_ctx` bei Ollama). Für Agenten mit vielen Skills
-   mindestens 32.000, besser 64.000 Token einstellen.
+2. Bspw. Qwen3.8-27B als Modell einrichten und als Standardmodell in Opencode wählen. 
+   Die Agentendateien setzen bewusst kein `model`, damit alle Agenten das Standardmodell nutzen; 
+   ein abweichendes Modell je Agent kanns im Frontmatter mit `model: provider/modell` ergänzt werden.
+3. Für Agenten mit vielen Skills mindestens 32.000, besser 64.000 Token einstellen.
 4. Prüfen: In Opencode die Agentenliste aufrufen; `athene` ist der primäre Agent, die übrigen 12 sind
    Subagenten. Die Skills müssen in der Skill-Liste erscheinen.
 
@@ -68,14 +65,6 @@ agentic-testing/
 Jeder Skill trägt im Frontmatter `license` und `metadata` (Autor, Copyright, Version, Basis, Sprache)
 und enthält eine eigene `LICENSE.txt`, damit er auch einzeln weitergegeben werden kann.
 
-## Lizenz
-
-Alle Inhalte stehen unter **CC BY-SA 4.0** (Namensnennung – Weitergabe unter gleichen Bedingungen),
-siehe `LICENSE` (verbindlicher Lizenztext) und `NOTICE.md` (Urheber und Namensnennung). Nutzung, auch kommerziell, und Bearbeitung sind erlaubt, wenn IT-Beratung Martin
-Klein genannt wird, Änderungen kenntlich gemacht werden und Bearbeitungen unter derselben Lizenz
-weitergegeben werden. Für Software empfiehlt Creative Commons eigentlich Software-Lizenzen; der
-Generator ist hier bewusst mit eingeschlossen.
-
 ## Rechte je Agent
 
 Jeder Agent hat dieselben Grundrechte (Opencode-V2-`permissions`):
@@ -84,7 +73,7 @@ Jeder Agent hat dieselben Grundrechte (Opencode-V2-`permissions`):
 | --- | --- |
 | `edit` | nur `arbeitsbereich/**` |
 | `shell` | mit Rückfrage |
-| `webfetch`, `websearch` | gesperrt (lokaler Betrieb, Kundenumfelder mit Sicherheitsüberprüfung) |
+| `webfetch`, `websearch` | gesperrt (lokaler Betrieb) |
 | `skill` | nur die Skills, die die Matrix dem Agenten zuordnet (Kernskills und unterstützende Skills mit mindestens zwei Methoden) |
 | `subagent` | nur Athene darf Subagenten aufrufen |
 
@@ -130,4 +119,8 @@ Fehlalarme, richtige Agentenwahl durch Athene, richtige Skillwahl.
 
 ## Lizenz
 
-© 2026 IT-Beratung Martin Klein · Lizenz CC BY-SA 4.0, siehe `LICENSE` und `NOTICE.md` · Stand 2026-11-18 · Version 1.0
+Alle Inhalte stehen unter **CC BY-SA 4.0** (Namensnennung – Weitergabe unter gleichen Bedingungen),
+siehe `LICENSE` (verbindlicher Lizenztext) und `NOTICE.md` (Urheber und Namensnennung). Nutzung, auch kommerziell, und Bearbeitung sind erlaubt, wenn IT-Beratung Martin
+Klein genannt wird, Änderungen kenntlich gemacht werden und Bearbeitungen unter derselben Lizenz
+weitergegeben werden. Für Software empfiehlt Creative Commons eigentlich Software-Lizenzen; der
+Generator ist hier bewusst mit eingeschlossen.
