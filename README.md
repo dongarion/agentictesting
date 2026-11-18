@@ -4,8 +4,6 @@ Die Heimat der Test-Götter und -Helden.
 13 Testagenten für Opencode 2.x mit 13 Skills zum Softwaretest. Agenten, Verantwortung, Haltung und
 Skillrechte werden aus der Rollen-Methoden-Matrix erzeugt.
 
-© 2026 IT-Beratung Martin Klein · Lizenz CC BY-SA 4.0, siehe `LICENSE` und `NOTICE.md` · Stand 2026-11-17 · Version 1.0
-
 ## Verzeichnisstruktur
 
 ```
@@ -129,3 +127,7 @@ Fehlalarme, richtige Agentenwahl durch Athene, richtige Skillwahl.
   gegen die gültige Fassung zu prüfen; sie ersetzen keine Rechts- oder Datenschutzberatung.
 - Die Agentennamen stammen aus der griechischen Mythologie (gemeinfrei). Vor einer Nutzung als Marke
   Markenrecherche durchführen.
+
+## Lizenz
+
+© 2026 IT-Beratung Martin Klein · Lizenz CC BY-SA 4.0, siehe `LICENSE` und `NOTICE.md` · Stand 2026-11-18 · Version 1.0
