@@ -1,4 +1,4 @@
-# Agentic Testing
+# Testheon - Agentic Testing
 
 13 Testagenten für Opencode 2.x mit 13 Skills zum Softwaretest. Agenten, Verantwortung, Haltung und
 Skillrechte werden aus der Rollen-Methoden-Matrix erzeugt.
